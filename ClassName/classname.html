@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function is_class(str) {
+        var regexp = /^[ACG]+[\d]+[GHIKLM]$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+
+    var input = prompt('Class: ')
+    console.log(is_class(input));
+
+</script>
+</body>
+</html>
